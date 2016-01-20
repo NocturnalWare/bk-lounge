@@ -69,11 +69,6 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a style="color:#fff" href="{{route('videos.index')}}" class="btn">
-                            <i style="font-size:1.5em"class="fa fa-video-camera"></i>
-                        </a>
-                    </li>
-                    <li>
                         <a style="color:#fff" href="{{route('photos.index')}}" class="btn">
                             <i style="font-size:1.5em"class="fa fa-camera"></i>
                         </a>
