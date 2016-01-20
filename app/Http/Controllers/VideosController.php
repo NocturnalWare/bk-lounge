@@ -40,7 +40,8 @@ class VideosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        VideoReelList::create($request->except('_token'));
+        return redirect()->route('photos.index');
     }
 
     /**
