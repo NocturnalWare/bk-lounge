@@ -1,6 +1,4 @@
-@extends('layouts.master')
 
-@section('content')
 <form method="post" action="{{route('videos.store')}}">
 
 <br>
@@ -12,4 +10,3 @@ url <input name="url">
 </form>
 
 
-@stop
