@@ -30,44 +30,65 @@
                 background-color: #000;
                 margin: 0;
                 padding: 0;
-                width: 100%;
+                width: 98%;
                 display: table;
                 font-weight: 100;
-                font-family: 'Lato';
+                font-family: 'Cambay', sans-serif;
             }
         </style>
     </head>
-    <body>
-        <div class="col-sm-12">
-            <div class="col-sm-2">
-                <a target="_blank" href="route('video.index')" class="btn btn-default">
-                    <i style="font-size:2em"class="fa fa-video-camera"></i>
-                </a>
-            </div>
-            <div class="col-sm-2">
-                <a target="_blank" href="route('photo.index')" class="btn btn-default">
-                    <i style="font-size:2em"class="fa fa-video-camera"></i>
-                </a>
-            </div>
-        </div>
-        @yield('content')
-        <div class="row">
-            <div class="col-xs-12">
-                <center>
-                    <a target="_blank" href="https://twitter.com/thebansheepilot" class="btn btn-default">
-                        <i style="font-size:2em"class="fa fa-twitter"></i>
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/thebansheepilot/" class="hidden btn btn-default">
-                        <i style="font-size:2em"class="fa fa-instagram"></i>
-                    </a>
-                    <a target="_blank" href="https://www.facebook.com/brandanleekeller" class="btn btn-default">
-                        <i style="font-size:2em"class="fa fa-facebook-official"></i>
-                    </a>
-                    <a target="_blank" href="https://thebansheepilotofficial.bandcamp.com/" class="btn btn-default">
-                        <i style="font-size:2em"class="fa fa-music"></i>
-                    </a>
-                </center>
-            </div>
-        </div>
-    </body>
+    <div style="overflow-x:hidden">
+        <body>
+
+            <nav class="navbar navbar-default" style="background-color:#000;border:0px">
+              <div class="container-fluid" style="background-color:#000;">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header" style="background-color:#000;">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar" style="background-color:#fff;"></span>
+                    <span class="icon-bar" style="background-color:#fff;"></span>
+                    <span class="icon-bar" style="background-color:#fff;"></span>
+                  </button>
+                  <a class="navbar-brand" href="#" style="background-color:#000;color:#fff">Brandan Lee Keller</a>
+                </div>
+                  <ul class="nav navbar-nav navbar-left">
+                        <select class="form-control" id="setvideo">
+                    @foreach($videos as $video)
+                            <option value="{{$video->url}}">{{$video->title}}</option>
+                    @endforeach
+                        </select>
+
+                    <script type="text/javascript">
+                        $('#setvideo').on('change', function(){
+                            $('.videobox').attr('src', $(this).val());
+                        });
+                    </script>
+                    </ul>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a style="color:#fff" href="{{route('videos.index')}}" class="btn">
+                            <i style="font-size:1.5em"class="fa fa-video-camera"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a style="color:#fff" href="{{route('photos.index')}}" class="btn">
+                            <i style="font-size:1.5em"class="fa fa-camera"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a style="color:#fff" target="_blank" href="https://www.facebook.com/brandanleekeller" class="btn">
+                            <i style="font-size:1.5em"class="fa fa-facebook-official"></i>
+                        </a>
+                    </li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+
+            @yield('content')
+        </body>
+    </div>
 </html>

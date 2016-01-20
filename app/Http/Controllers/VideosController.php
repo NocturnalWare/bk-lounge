@@ -51,7 +51,7 @@ class VideosController extends Controller
      */
     public function show($id)
     {
-        $video = VideoReelList::find(1);
+        $video = VideoReelList::find($id);
         return view('videos.show', compact('video'));
     }
 

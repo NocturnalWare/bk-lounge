@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$videos = \App\VideoReelList::all();
+    return view('videos.index', compact('videos'));
 });
 
 
