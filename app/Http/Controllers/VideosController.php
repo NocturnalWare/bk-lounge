@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\VideoReelList;
+
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -16,7 +18,8 @@ class VideosController extends Controller
      */
     public function index()
     {
-        return view('videos.index');
+        $videos = VideoReelList::all();
+        return view('videos.index', compact('videos'));
     }
 
     /**
@@ -48,7 +51,8 @@ class VideosController extends Controller
      */
     public function show($id)
     {
-        return view('videos.show', compact($id))
+        $video = VideoReelList::find(1);
+        return view('videos.show', compact('video'));
     }
 
     /**

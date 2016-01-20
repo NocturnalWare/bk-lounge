@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 
-Route::resource('video', 'VideosController');
-Route::resource('photo', 'PhotosController');
+Route::resource('videos', 'VideosController');
+Route::resource('photos', 'PhotosController');
