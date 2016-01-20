@@ -69,7 +69,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a style="color:#fff" href="{{route('photos.index')}}" class="btn">
+                        <a target="_blank" style="color:#fff" href="https://www.flickr.com/photos/brandanleekeller" class="btn">
                             <i style="font-size:1.5em"class="fa fa-camera"></i>
                         </a>
                     </li>
