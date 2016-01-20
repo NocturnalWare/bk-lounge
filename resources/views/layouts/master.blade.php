@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Brandan Lee Keller</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="http://bansheepilot.com/images/bansheealbum.jpg" />
-    <meta property="og:description" content="The Banshee Pilot is an Alternative, concept rock band rising from the post-apocalyptic remains of Detroit, MI." />
-    <meta property="og:title" content="The Banshee Pilot" />
+    <meta property="og:image" content="http://brandanleekeller.com/images/riches.PNG" />
+    <meta property="og:description" content="My name is Brandan Lee Keller, I'm a filmmaker from Metro Detroit, Michigan. Some of my work has been featured by Alternative Press, Hopeless Records, Fearless Records, Under the Gun Review, and Major League Baseball." />
+    <meta property="og:title" content="Brandan Lee Keller" />
     <!-- Font Awesome -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet' type='text/css'>
